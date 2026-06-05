@@ -1,16 +1,16 @@
-## Hi there 👋
+# Hi, I'm Ziqi Wang 👋
 
-<!--
-**ziqiwang20/ziqiwang20** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I am a PhD candidate in the School of Computing Technologies at RMIT University, supervised by Prof. Ibrahim Khalil, Dr. Xiaoyu Xia, and Dr. Jason Xue.
 
-Here are some ideas to get you started:
+Research Interests:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- Multi-Agent Systems
+
+- Agentic AI
+
+- Edge Intelligence, Distributed and Parallel Computing
+
+- Privacy-Preserving AI
+
+## About Me
+
