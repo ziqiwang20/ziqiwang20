@@ -3,7 +3,6 @@ name: generate pacman contribution graph
 on:
   schedule:
     - cron: "0 */12 * * *"
-
   workflow_dispatch:
 
 permissions:
@@ -14,13 +13,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: generate pacman graph
-        uses: abozanona/pacman-contribution-graph@main
-        with:
-          github_user_name: ziqiwang20
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: deploy
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Generate pacman contribution graph
+        run: |
+          mkdir -p dist
+          npx pacman-contribution-graph --github-user-name ziqiwang20 --output dist/pacman-contribution-graph.svg --output-dark dist/pacman-contribution-graph-dark.svg
+
+      - name: Deploy to output branch
+        uses: crazy-max/ghaction-github-pages@v4
         with:
-          branch: output
-          folder: output
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
