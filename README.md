@@ -11,3 +11,4 @@ Research Interests:
 
 ## About Me
 
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=zqwang30&show_icons=true)
